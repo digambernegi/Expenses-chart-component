@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  height: 100vh;
+}
+
+.attribution {
+  margin-top: 2em;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,68 @@
+.Chart {
+  margin-top: 1em;
+  padding: 0.1em 1em;
+  border-radius: 0.5em;
+  background-color: var(--Very-pale-orange);
+  background-color: white;
+  border-radius: 1.2rem;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 1px 0.1rem 0.1rem rgba(0, 0, 0, 3%);
+}
+
+.Chart .chart__title {
+  letter-spacing: 1.2px;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--Dark-brown);
+}
+.bar {
+  display: flex;
+}
+.hr {
+  width: 100%;
+  border: 1px solid var(--Medium-brown);
+  opacity: 0.1;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__total .footer__title {
+  color: var(--Medium-brown);
+  font-size: 0.9em;
+}
+.footer__total .footer__amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Dark-brown);
+  line-height: 5px;
+}
+
+.footer__percentage {
+  display: flex;
+  color: var(--Dark-brown);
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.footer__percentage .profit {
+  color: var(--Dark-brown);
+  font-weight: 700;
+}
+.footer__percentage .fromlastmonth {
+  color: var(--Medium-brown);
+  font-size: 0.9em;
+}
+
+.Chart .bar {
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

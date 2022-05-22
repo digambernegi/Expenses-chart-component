@@ -1,0 +1,73 @@
+.Bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: fit-content;
+  height: 200px;
+}
+
+.bar__amount {
+  font-size: 0.8rem;
+  position: relative;
+  padding: 5px;
+  top: 1rem;
+  opacity: 0;
+  background: var(--Dark-brown);
+  color: var(--Very-pale-orange);
+  border-radius: 0.2rem;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.bar__day {
+  color: var(--Medium-brown);
+  font-size: 0.7em;
+}
+
+@keyframes easeIn {
+  0% {
+    opacity: 0;
+    top: 1rem;
+  }
+
+  100% {
+    top: 0;
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes easeOut {
+  0% {
+    display: block;
+    opacity: 1;
+    top: 0;
+  }
+
+  100% {
+    opacity: 0;
+    top: 1rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .Bar {
+    width: 2.5rem;
+  }
+
+  .bar__amount {
+    font-size: 0.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Chart {
+    animation: easeIn initial 20s ease;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .Chart {
+    animation: easeOut initial 20s ease;
+  }
+}
